@@ -1,0 +1,8 @@
+{
+  "name": "local-anime-api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
