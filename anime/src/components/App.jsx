@@ -20,9 +20,11 @@ function App() {
 
   const search = async (term) => {
     setAnimeResponse({ series: [], error: null, loading: true });
+    setFavoriteAnimeSeries([]);
+    
     try {
       const response = await axios.get(
-        `https://api.jikan.moe/v4/anime?limit=6&q=${term}`
+        `http://api.jikan.moe/v4/anime?limit=6&q=${term}`
       );
       setAnimeResponse({
         series: response.data.data,
