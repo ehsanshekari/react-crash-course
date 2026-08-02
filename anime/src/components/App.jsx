@@ -24,7 +24,7 @@ function App() {
     
     try {
       const response = await axios.get(
-        `http://api.jikan.moe/v4/anime?limit=6&q=${term}`
+        `http://localhost:3001/v4/anime?limit=6&q=${term}`
       );
       setAnimeResponse({
         series: response.data.data,
